@@ -1,0 +1,44 @@
+@mixin transparent-bg {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 51, 53, 0.85);
+  top: 0;
+  left: 0;
+}
+
+@mixin portfolio-icon {
+  font-family: "Font Awesome 5 Free";
+  content: "\2b";
+  font-weight: 900;
+  width: 35px;
+  height: 35px;
+  background-color: #f86b50;
+  color: white;
+  @include center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin row-down {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: #323335 transparent transparent;
+  top: 100%;
+}

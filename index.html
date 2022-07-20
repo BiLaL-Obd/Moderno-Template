@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderno Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar position-absolute top-0 w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="imgs/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="main-nav"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="close-nav"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas-body text-light text-center pt-3 pb-5 position-relative"
+          >
+            <span class="logo d-block m-auto bg-white rounded-circle text-end"
+              >M</span
+            >
+            <h3 class="text-uppercase mt-4 mb-4">Menu</h3>
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link d-block text-uppercase pt-3 pb-3 active"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-block text-uppercase pt-3 pb-3"
+                  href="#services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-block text-uppercase pt-3 pb-3"
+                  href="#stories"
+                  >Stories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-block text-uppercase pt-3 pb-3"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="nav-icon pt-4">
+              <a
+                href="www.faceboock.com"
+                class="bg-white rounded-circle d-inline-block text-center me-3"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="www.twitter.com"
+                class="bg-white rounded-circle d-inline-block text-center"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <section
+      class="landing position-relative d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="container text-light position-relative text-center">
+        <h1 class="text-uppercase">Moderno</h1>
+        <p class="pt-5 pb-5 m-auto text-white-50">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa omnis
+          aspernatur
+        </p>
+        <a
+          href="#"
+          class="main-btn text-decoration-none d-block text-light p-2 pe-5 ps-5 m-auto rounded-2"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+    <!-- End Landing -->
+    <!-- Start Services -->
+    <section
+      id="services"
+      class="services position-relative pt-5 pb-5 text-center"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <i
+                class="fa-solid fa-pencil rounded-circle p-3 m-auto d-flex justify-content-center align-items-center fa-2x active"
+              ></i>
+              <h5 class="mt-4 mb-4 fw-bolder">We are Creative</h5>
+              <p class="text-black-50">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia ut incidunt repellat nemo voluptatem quaerat quod,
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <i
+                class="fa-solid fa-laptop rounded-circle p-3 m-auto d-flex justify-content-center align-items-center fa-2x"
+              ></i>
+              <h5 class="mt-4 mb-4 fw-bolder">We Have Skills</h5>
+              <p class="text-black-50">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <i
+                class="fa-solid fa-palette rounded-circle p-3 m-auto d-flex justify-content-center align-items-center fa-2x"
+              ></i>
+              <h5 class="mt-4 mb-4 fw-bolder">We Love To Help</h5>
+              <p class="text-black-50">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia ut incidunt repellat nemo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start Stories -->
+    <section id="stories" class="stories position-relative pt-5 pb-5">
+      <div class="container">
+        <div class="main-title text-center pb-5">
+          <h2 class="fw-bold">Success Stories</h2>
+          <p class="text-black-50">We do Awesome Work, Check Some of Stories</p>
+        </div>
+        <div class="popup-box open">
+          <div class="row">
+            <div class="col-lg-6 text-center">
+              <div class="image">
+                <img src="imgs/portfolio-1.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div
+              class="col-lg-6 text-center text-lg-start pt-5 pb-5 d-flex align-items-center position-relative"
+            >
+              <div class="text">
+                <h4 class="fw-bold popupHead">Lorem Ipsum Project</h4>
+                <p class="text-black-50 pt-4 pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident accusamus nobis, sapiente unde earum eum ipsa ab
+                  enim, dignissimos illo amet a consequuntur consectetur quas
+                  quos doloribus tempore! Ducimus, laudantium!
+                </p>
+                <a
+                  href="#"
+                  class="main-btn text-decoration-none d-block text-light p-3 pe-5 ps-5 m-auto m-lg-0"
+                  >view Project</a
+                >
+              </div>
+              <i class="fa-solid fa-xmark position-absolute closePopup"></i>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-1.jpg"
+                  alt="Lorem Ipsum Project 1"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-2.png"
+                  alt="Lorem Ipsum Project 2"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-3.png"
+                  alt="Lorem Ipsum Project 3"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-4.jpg"
+                  alt="Lorem Ipsum Project 4"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-5.png"
+                  alt="Lorem Ipsum Project 5"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-4">
+              <div class="image position-relative text-center">
+                <img
+                  src="imgs/portfolio-6.png"
+                  alt="Lorem Ipsum Project 6"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Stories -->
+    <!-- Start Contact -->
+    <section id="contact" class="contact position-relative pt-5 pb-5">
+      <div class="container">
+        <div class="main-title text-center pb-5">
+          <h2 class="fw-bold">Get In Touch</h2>
+          <p class="text-black-50">We Are Communication and Social</p>
+        </div>
+        <div class="map position-relative">
+          <img src="imgs/map.jpg" class="w-100" alt="" />
+          <h4 class="map-center position-absolute text-center rounded-2 p-4">
+            We Are Here
+          </h4>
+        </div>
+        <div class="contact-msg pt-3">
+          <div class="row">
+            <div class="col-md-9 order-2 order-md-1">
+              <div class="msg">
+                <form action="" class="row">
+                  <div class="col-md-6 mt-4">
+                    <input
+                      type="text"
+                      class="w-100 border-0 p-3"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-4">
+                    <input
+                      type="email"
+                      class="w-100 border-0 p-3"
+                      placeholder="Your Mail"
+                    />
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <input
+                      type="text"
+                      class="w-100 border-0 p-3"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <textarea
+                      class="w-100 border-0 p-3"
+                      cols="30"
+                      rows="5"
+                      placeholder="Type Message Here..."
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <input
+                      type="submit"
+                      class="w-100 border-0 p-2 text-light"
+                      value="Send"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="col-md-3 mt-4 text-center text-md-start order-1 order-md-2"
+            >
+              <div class="info">
+                <div class="address">
+                  <h5 class="mb-3">Our Address</h5>
+                  <span class="text-black-50 d-block"
+                    >4869 Desen Boun Count</span
+                  >
+                  <span class="text-black-50 d-block">New York , NJ 07012</span>
+                  <span class="text-black-50 d-block">United Stats</span>
+                </div>
+                <div class="email">
+                  <h5 class="mb-3 mt-5">Email</h5>
+                  <span class="text-black-50">moderno@gmail.com</span>
+                </div>
+                <div class="phone">
+                  <h5 class="mb-3 mt-5">Phone</h5>
+                  <span class="text-black-50">+00-123-456-789</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer class="mt-4 pt-5 pb-5">
+      <div
+        class="container d-flex align-items-center gap-3 text-center text-md-start justify-content-md-between flex-column flex-md-row"
+      >
+        <div class="copy-text text-light">
+          Copyright &copy; 2014 Moderno, All Right Reversed
+        </div>
+        <div class="copy-icon">
+          <a
+            href="www.faceboock.com"
+            class="bg-white rounded-circle d-inline-block text-center me-3"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="www.twitter.com"
+            class="bg-white rounded-circle d-inline-block text-center"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- ######### Script ######### -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

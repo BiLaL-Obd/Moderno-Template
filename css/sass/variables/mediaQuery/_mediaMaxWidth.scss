@@ -1,0 +1,15 @@
+@mixin breackPoint($point) {
+  @if $point == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@use "./sass/variables/globals/color" as *;
+@use "./sass/variables/globals/global" as *;
+@use "./sass/variables/mediaQuery/mediaMaxWidth" as *;
+
+.main-btn {
+  background-color: $main-color;
+  width: fit-content;
+  transition: $transition;
+  &:hover {
+    background-color: #f16349;
+  }
+}
+// Navbar
+.navbar {
+  z-index: 99;
+  .logo {
+    width: 150px;
+    height: 50px;
+  }
+  .navbar-toggler {
+    border: none;
+    i {
+      color: white;
+    }
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .offcanvas {
+    width: 290px;
+  }
+  .offcanvas-header {
+    justify-content: end;
+    background-color: $dark-color;
+    .close-nav {
+      background-color: $dark-color;
+      color: white;
+      border: none;
+    }
+  }
+  .offcanvas-body {
+    background-color: $dark-color;
+    .logo {
+      font-size: 35px;
+      width: 45px;
+      height: 45px;
+      color: $dark-color;
+      font-weight: 600;
+      user-select: none;
+    }
+    .navbar-nav {
+      .nav-link {
+        color: white;
+        transition: $transition;
+        &.active,
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+    .nav-icon {
+      a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: $dark-color;
+        transition: $transition;
+        &:hover {
+          background-color: $main-color !important;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Landing
+.landing {
+  background-image: url("../imgs/landing.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  &::before {
+    @include transparent-bg;
+  }
+  p {
+    width: 450px;
+    max-width: 100%;
+  }
+}
+
+// Services
+.services {
+  i {
+    color: $main-color;
+    border: 1px solid #e6e6e6;
+    width: fit-content;
+    &.active,
+    &:hover {
+      background-color: $main-color;
+      color: white;
+    }
+  }
+}
+
+// Stories
+.stories {
+  background-color: $transparent-color;
+  .img-fluid {
+    width: 100%;
+  }
+  .popup-box {
+    &.open {
+      display: block;
+    }
+    display: none;
+    border: 1px solid #e6e6e6;
+    i {
+      top: 25px;
+      right: 30px;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  .portfolio {
+    .image {
+      transition: $transition;
+      cursor: pointer;
+      &:hover::before {
+        @include transparent-bg;
+      }
+      &:hover::after {
+        @include portfolio-icon;
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  .map {
+    img {
+      height: 400px;
+    }
+    .map-center {
+      @include center;
+      background-color: $dark-color;
+      color: $main-color;
+      &::before {
+        @include row-down;
+      }
+    }
+  }
+  .contact-msg {
+    form {
+      input,
+      textarea {
+        background-color: #f6f6f6;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      [type="submit"] {
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+// Copyright
+footer {
+  background-color: $dark-color;
+  a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $dark-color;
+    transition: $transition;
+    &:hover {
+      background-color: $main-color !important;
+      color: white;
+    }
+  }
+}
